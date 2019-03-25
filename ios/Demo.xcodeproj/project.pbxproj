@@ -42,8 +42,8 @@
 		B9326C9B55104D70ACA34CC1 /* libRNDatePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCE305CA1B94D03B97F67D2 /* libRNDatePicker.a */; };
 		A077CCCB6DA041EE9223AA6D /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A928C925B149A3B7DAEAFB /* libRNDeviceInfo.a */; };
 		BEBF700176924F94953C32A0 /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78969BDC2FBE4B5C90A151A4 /* libRNDeviceInfo-tvOS.a */; };
-		62B40FDC0D4E4966BB7B3873 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F727369BD4FC47FCB741268A /* libCodePush.a */; };
-		9B9D48258DF047EF9B40FC1C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C772E5C04046FEB500FBC9 /* libz.tbd */; };
+		5D9A91C443014B689E4F77B7 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB44277849D84B31A0966B57 /* libCodePush.a */; };
+		EF4F86CCF20C4129963C61B0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F867734DE584BAE855ED38E /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -356,9 +356,9 @@
 		3E2B7BB374784E499420C347 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; name = "RNDeviceInfo.xcodeproj"; path = "../node_modules/react-native-device-info/ios/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		37A928C925B149A3B7DAEAFB /* libRNDeviceInfo.a */ = {isa = PBXFileReference; name = "libRNDeviceInfo.a"; path = "libRNDeviceInfo.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		78969BDC2FBE4B5C90A151A4 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; name = "libRNDeviceInfo-tvOS.a"; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		93EA7EF738BF4869A9AEFCC5 /* CodePush.xcodeproj */ = {isa = PBXFileReference; name = "CodePush.xcodeproj"; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		F727369BD4FC47FCB741268A /* libCodePush.a */ = {isa = PBXFileReference; name = "libCodePush.a"; path = "libCodePush.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		A0C772E5C04046FEB500FBC9 /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+		8C87ADE87377440495F8AF77 /* CodePush.xcodeproj */ = {isa = PBXFileReference; name = "CodePush.xcodeproj"; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		AB44277849D84B31A0966B57 /* libCodePush.a */ = {isa = PBXFileReference; name = "libCodePush.a"; path = "libCodePush.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		4F867734DE584BAE855ED38E /* libz.tbd */ = {isa = PBXFileReference; name = "libz.tbd"; path = "usr/lib/libz.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,8 +389,8 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				B9326C9B55104D70ACA34CC1 /* libRNDatePicker.a in Frameworks */,
 				A077CCCB6DA041EE9223AA6D /* libRNDeviceInfo.a in Frameworks */,
-				62B40FDC0D4E4966BB7B3873 /* libCodePush.a in Frameworks */,
-				9B9D48258DF047EF9B40FC1C /* libz.tbd in Frameworks */,
+				5D9A91C443014B689E4F77B7 /* libCodePush.a in Frameworks */,
+				EF4F86CCF20C4129963C61B0 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +544,7 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				A0C772E5C04046FEB500FBC9 /* libz.tbd */,
+				4F867734DE584BAE855ED38E /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -584,7 +584,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				048EF30C51D4492FB7648D48 /* RNDatePicker.xcodeproj */,
 				3E2B7BB374784E499420C347 /* RNDeviceInfo.xcodeproj */,
-				93EA7EF738BF4869A9AEFCC5 /* CodePush.xcodeproj */,
+				8C87ADE87377440495F8AF77 /* CodePush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1213,9 +1213,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1243,9 +1240,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
@@ -1332,9 +1326,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1371,9 +1362,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1409,9 +1397,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1446,9 +1431,6 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (

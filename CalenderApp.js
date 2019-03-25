@@ -165,7 +165,7 @@ export default class DatePickerTimePickerDialog extends Component {
       <View style={styles.container}>
         <Text style={styles.content}>Test Code Push</Text>
         <TouchableOpacity onPress={this.onButtonPress}>
-          <Text>Check for New updates</Text>
+          <Text>Check For New Version Now</Text>
         </TouchableOpacity>
       </View>
     );
