@@ -64,83 +64,6 @@
 
 
 
-// import React, { Component } from 'react';
-// import {
-//   AppRegistry,
-//   StyleSheet,
-//   Text,
-//   View,
-//   TouchableOpacity,
-// } from 'react-native';
-
-// import DatePicker from 'react-native-date-picker';
-// import moment from 'moment';
-// import DeviceInfo from 'react-native-device-info';
-
-// export default class DatePickerTimePickerDialog extends Component {
-
-//   state = { birthDate: new Date() }
-//   select(day) {
-//     const test = moment(day, 'YYYY-MM-DD').format('YYYY-MM-DD')
-//     console.log("day " , test)
-// }
-//   render() {
-//     const readableVersion = DeviceInfo.getReadableVersion();
-//     const version = DeviceInfo.getVersion();
-//     console.log("version " , version)
-
-//     console.log("readableVersion " , readableVersion)
-//     return (
-//       <View style={styles.container}>
-
-//         <DatePicker
-//           date={this.state.birthDate}
-//           //onDateChange={date => this.setState({ date })}
-//           mode={'date'}
-//           onDateChange={this.select.bind(this)}
-//           maximumDate={this.state.birthDate}
-//         />
-
-//       </View>
-//     );
-//   }
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     //padding: 10,
-//     backgroundColor: '#FFFFFF',
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//   },
-//   content: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//   },
-//   datePickerBox: {
-//     marginTop: 9,
-//     borderColor: '#ABABAB',
-//     borderWidth: 0.5,
-//     padding: 0,
-//     borderTopLeftRadius: 4,
-//     borderTopRightRadius: 4,
-//     borderBottomLeftRadius: 4,
-//     borderBottomRightRadius: 4,
-//     height: 38,
-//     justifyContent: 'center'
-//   },
-//   datePickerText: {
-//     fontSize: 14,
-//     marginLeft: 5,
-//     borderWidth: 0,
-//     color: '#121212',
-//   },
-// });
-
-
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -149,10 +72,19 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
+
+import DatePicker from 'react-native-date-picker';
+import moment from 'moment';
+import DeviceInfo from 'react-native-device-info';
 import codePush from "react-native-code-push";
 
 export default class DatePickerTimePickerDialog extends Component {
 
+  state = { birthDate: new Date() }
+  select(day) {
+    const test = moment(day, 'YYYY-MM-DD').format('YYYY-MM-DD')
+    console.log("day ", test)
+  }
   onButtonPress() {
     codePush.sync({
       updateDialog: true,
@@ -160,13 +92,26 @@ export default class DatePickerTimePickerDialog extends Component {
     });
   }
   render() {
+    const readableVersion = DeviceInfo.getReadableVersion();
+    const version = DeviceInfo.getVersion();
+    console.log("version ", version)
 
+    console.log("readableVersion ", readableVersion)
     return (
       <View style={styles.container}>
-        <Text style={styles.content}>Test Code Push</Text>
         <TouchableOpacity onPress={this.onButtonPress}>
-          <Text>Check For New Version Now</Text>
+          <Text>Check for updates</Text>
+          <Text>Check for New Version </Text>
+
         </TouchableOpacity>
+        <DatePicker
+          date={this.state.birthDate}
+          //onDateChange={date => this.setState({ date })}
+          mode={'date'}
+          onDateChange={this.select.bind(this)}
+          maximumDate={this.state.birthDate}
+        />
+
       </View>
     );
   }
@@ -184,5 +129,23 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+  },
+  datePickerBox: {
+    marginTop: 9,
+    borderColor: '#ABABAB',
+    borderWidth: 0.5,
+    padding: 0,
+    borderTopLeftRadius: 4,
+    borderTopRightRadius: 4,
+    borderBottomLeftRadius: 4,
+    borderBottomRightRadius: 4,
+    height: 38,
+    justifyContent: 'center'
+  },
+  datePickerText: {
+    fontSize: 14,
+    marginLeft: 5,
+    borderWidth: 0,
+    color: '#121212',
   },
 });
